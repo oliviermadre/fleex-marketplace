@@ -1,0 +1,8 @@
+{
+  "commandName": "visual-web-diagram",
+  "name": "visual-web-diagram",
+  "displayName": "Visual Web Diagram",
+  "markdownContent": "---\nname: visual-web-diagram\ndescription: >\n  Produit un deliverable au format html de l'attente utilisateur au regard du contexte courant.\n---\n\n# Skill Instructions\n\nUtilise le skill claude /visual-explainer:generate-web-diagram pour générer une page html standalone qui répond à la demande de l'utilisateur, mais ne fais pas le \"open\" final, contente toi de générer le fichier html.\n\nCe skill Claude génère une page html dans un dossier spécifique, puis fais un open de cette page html : \nJe t'interdis de laisser ce skill exécuter la commande \"open\" qui va ouvrir le navigateur sur cette page html !\nA la place, récupère le contenu html généré et insère le dans le deliverable de la StructuredOutput.\n\nLe type de deliverable est \"html\", c'est important pour que Fleex puisse effectuer un rendu correct à posteriori.\n\nAssure toi que le titre du deliverable commence par \"HTML Visual : \" suivi d'une courte description explicite du contenu en quelques mots.\n\nLorsque tu as terminé, ton output contient donc le deliverable + un commentaire expliquant que le deliverable a été correctement généré (s'il l'a été, autrement explique les raisons d'échec en commentaire).",
+  "enabled": true,
+  "persona": "jarvis"
+}
