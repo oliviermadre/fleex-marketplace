@@ -1,0 +1,108 @@
+{
+  "slug": "spec-dev-qa",
+  "name": "Spec Dev PR",
+  "emoji": "⚙️",
+  "description": "De la spec à la PR",
+  "steps": [
+    {
+      "id": "s-1779708239670-65fc",
+      "name": "Spec",
+      "position": {
+        "x": -250.34869381064306,
+        "y": -190.05105727471502
+      },
+      "executorRef": "catalyst",
+      "executorType": "agent"
+    },
+    {
+      "id": "s-1779708253355-mjla",
+      "name": "Build",
+      "position": {
+        "x": 644.8098868133092,
+        "y": -288.7502767933312
+      },
+      "executorRef": "builder",
+      "executorType": "agent"
+    },
+    {
+      "id": "s-1779708306368-thgf",
+      "name": "Check Spec",
+      "position": {
+        "x": 2.9209460631927016,
+        "y": -190.54507688362742
+      },
+      "executorRef": "",
+      "executorType": "human_gate",
+      "humanGateOutcomes": [
+        "approve",
+        "reject"
+      ]
+    },
+    {
+      "id": "s-1779708428125-rzwn",
+      "name": "Press Release - FAQ",
+      "position": {
+        "x": 326.22660126774946,
+        "y": -69.0311773139287
+      },
+      "executorRef": "pr-faq",
+      "executorType": "skill"
+    },
+    {
+      "id": "s-1779708523790-vps7",
+      "name": "Review",
+      "position": {
+        "x": 966.5271341052929,
+        "y": -291.29123616009804
+      },
+      "executorRef": "pr-review",
+      "executorType": "skill"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-1779708416016-6800",
+      "source": "s-1779708239670-65fc",
+      "target": "s-1779708306368-thgf",
+      "isDefault": true
+    },
+    {
+      "id": "e-1779708429998-glhn",
+      "label": "approve",
+      "source": "s-1779708306368-thgf",
+      "target": "s-1779708428125-rzwn",
+      "condition": {
+        "field": "outcome",
+        "value": "approve",
+        "operator": "eq"
+      },
+      "isDefault": false
+    },
+    {
+      "id": "e-1779708448944-synu",
+      "label": "reject",
+      "source": "s-1779708306368-thgf",
+      "target": "s-1779708239670-65fc",
+      "condition": {
+        "field": "outcome",
+        "value": "reject",
+        "operator": "eq"
+      },
+      "isDefault": false
+    },
+    {
+      "id": "e-1779708468607-xzk4",
+      "source": "s-1779708428125-rzwn",
+      "target": "s-1779708253355-mjla",
+      "isDefault": true
+    },
+    {
+      "id": "e-1779708525848-s5ju",
+      "source": "s-1779708253355-mjla",
+      "target": "s-1779708523790-vps7",
+      "isDefault": true
+    }
+  ],
+  "entryStepId": "s-1779708239670-65fc",
+  "enabled": true
+}

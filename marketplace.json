@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "name": "fleex-marketplace",
+  "primitives": [
+    {
+      "kind": "panel",
+      "slug": "archi-committee",
+      "displayName": "Architecture Committee",
+      "path": "panels/archi-committee.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "sentinel"
+        },
+        {
+          "kind": "persona",
+          "slug": "metrician"
+        },
+        {
+          "kind": "persona",
+          "slug": "guardian"
+        },
+        {
+          "kind": "persona",
+          "slug": "visionary"
+        },
+        {
+          "kind": "persona",
+          "slug": "enabler"
+        },
+        {
+          "kind": "persona",
+          "slug": "pragmatic-architect"
+        },
+        {
+          "kind": "persona",
+          "slug": "arbiter"
+        }
+      ]
+    },
+    {
+      "kind": "panel",
+      "slug": "bigtech",
+      "displayName": "Les Big Tech",
+      "path": "panels/bigtech.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "jeff-bezos"
+        },
+        {
+          "kind": "persona",
+          "slug": "steve-jobs"
+        },
+        {
+          "kind": "persona",
+          "slug": "elon-musk"
+        },
+        {
+          "kind": "persona",
+          "slug": "arbiter"
+        }
+      ]
+    },
+    {
+      "kind": "panel",
+      "slug": "bono",
+      "displayName": "Les chapeaux de Bono",
+      "path": "panels/bono.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "bono-blanc"
+        },
+        {
+          "kind": "persona",
+          "slug": "bono-rouge"
+        },
+        {
+          "kind": "persona",
+          "slug": "bono-noir"
+        },
+        {
+          "kind": "persona",
+          "slug": "bono-jaune"
+        },
+        {
+          "kind": "persona",
+          "slug": "bono-vert"
+        },
+        {
+          "kind": "persona",
+          "slug": "bono-bleu"
+        },
+        {
+          "kind": "persona",
+          "slug": "arbiter"
+        }
+      ]
+    },
+    {
+      "kind": "persona",
+      "slug": "arbiter",
+      "displayName": "The Arbiter",
+      "path": "personas/arbiter.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "bono-blanc",
+      "displayName": "Bono The White",
+      "path": "personas/bono-blanc.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "bono-bleu",
+      "displayName": "Bono The Blue",
+      "path": "personas/bono-bleu.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "bono-jaune",
+      "displayName": "Bono The Yellow",
+      "path": "personas/bono-jaune.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "bono-noir",
+      "displayName": "Bono The Black",
+      "path": "personas/bono-noir.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "bono-rouge",
+      "displayName": "Bono The Red",
+      "path": "personas/bono-rouge.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "bono-vert",
+      "displayName": "Bono The Green",
+      "path": "personas/bono-vert.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "builder",
+      "displayName": "The Builder",
+      "path": "personas/builder.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "catalyst",
+      "displayName": "The Catalyst",
+      "path": "personas/catalyst.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "elon-musk",
+      "displayName": "Elon Musk",
+      "path": "personas/elon-musk.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "enabler",
+      "displayName": "The Enabler",
+      "path": "personas/enabler.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "guardian",
+      "displayName": "The Guardian",
+      "path": "personas/guardian.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "jarvis",
+      "displayName": "Jarvis",
+      "path": "personas/jarvis.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "jeff-bezos",
+      "displayName": "Jeff Bezos",
+      "path": "personas/jeff-bezos.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "metrician",
+      "displayName": "The Metrician",
+      "path": "personas/metrician.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "pragmatic-architect",
+      "displayName": "The Pragmatic Architect",
+      "path": "personas/pragmatic-architect.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "sentinel",
+      "displayName": "The Sentinel",
+      "path": "personas/sentinel.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "steve-jobs",
+      "displayName": "Steve Jobs",
+      "path": "personas/steve-jobs.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "tldr",
+      "displayName": "The TLDR",
+      "path": "personas/tldr.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
+      "slug": "visionary",
+      "displayName": "The Visionary",
+      "path": "personas/visionary.json",
+      "dependencies": []
+    },
+    {
+      "kind": "skill",
+      "slug": "generate-spec",
+      "displayName": "Product - Generate Spec",
+      "path": "skills/generate-spec.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "catalyst"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "slug": "playground",
+      "displayName": "Playground",
+      "path": "skills/playground.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "jarvis"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "slug": "pr-faq",
+      "displayName": "Press Release - FAQ",
+      "path": "skills/pr-faq.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "jeff-bezos"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "slug": "pr-review",
+      "displayName": "PR Review",
+      "path": "skills/pr-review.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "builder"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "slug": "review-spec",
+      "displayName": "Product - Review Spec",
+      "path": "skills/review-spec.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "catalyst"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "slug": "structure-prd",
+      "displayName": "Product - Structure PRD",
+      "path": "skills/structure-prd.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "catalyst"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "slug": "visual-web-diagram",
+      "displayName": "Visual Web Diagram",
+      "path": "skills/visual-web-diagram.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "jarvis"
+        }
+      ]
+    },
+    {
+      "kind": "workflow",
+      "slug": "spec-dev-qa",
+      "displayName": "Spec Dev PR",
+      "path": "workflows/spec-dev-qa.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "catalyst"
+        },
+        {
+          "kind": "persona",
+          "slug": "builder"
+        },
+        {
+          "kind": "skill",
+          "slug": "pr-faq"
+        },
+        {
+          "kind": "skill",
+          "slug": "pr-review"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "bono",
+  "displayName": "Les chapeaux de Bono",
+  "description": "Le CTPO multi-facet !",
+  "executionMode": "claude_code",
+  "members": [
+    {
+      "persona": "bono-blanc",
+      "order": 0,
+      "modelOverride": "inherited"
+    },
+    {
+      "persona": "bono-rouge",
+      "order": 1,
+      "modelOverride": "inherited"
+    },
+    {
+      "persona": "bono-noir",
+      "order": 2,
+      "modelOverride": "inherited"
+    },
+    {
+      "persona": "bono-jaune",
+      "order": 3,
+      "modelOverride": "inherited"
+    },
+    {
+      "persona": "bono-vert",
+      "order": 4,
+      "modelOverride": "inherited"
+    },
+    {
+      "persona": "bono-bleu",
+      "order": 5,
+      "modelOverride": "inherited"
+    }
+  ],
+  "orchestratorPrompt": "",
+  "orchestratorModel": "claude-opus-4-6",
+  "orchestratorPersona": "arbiter",
+  "defaultMemberModel": "claude-sonnet-4-6",
+  "enabled": true
+}

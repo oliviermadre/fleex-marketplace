@@ -1,0 +1,28 @@
+{
+  "name": "bigtech",
+  "displayName": "Les Big Tech",
+  "description": "Les plus grands tech leaders",
+  "executionMode": "claude_code",
+  "members": [
+    {
+      "persona": "jeff-bezos",
+      "order": 0,
+      "modelOverride": "inherited"
+    },
+    {
+      "persona": "steve-jobs",
+      "order": 1,
+      "modelOverride": "inherited"
+    },
+    {
+      "persona": "elon-musk",
+      "order": 2,
+      "modelOverride": "inherited"
+    }
+  ],
+  "orchestratorPrompt": "",
+  "orchestratorModel": "claude-opus-4-6",
+  "orchestratorPersona": "arbiter",
+  "defaultMemberModel": "claude-opus-4-6",
+  "enabled": true
+}
