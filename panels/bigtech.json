@@ -21,8 +21,8 @@
     }
   ],
   "orchestratorPrompt": "",
-  "orchestratorModel": "claude-opus-4-6",
+  "orchestratorModel": "claude-opus-4-8",
   "orchestratorPersona": "arbiter",
-  "defaultMemberModel": "claude-opus-4-6",
+  "defaultMemberModel": "claude-opus-4-8",
   "enabled": true
 }

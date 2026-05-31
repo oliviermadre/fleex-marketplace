@@ -36,7 +36,7 @@
     }
   ],
   "orchestratorPrompt": "",
-  "orchestratorModel": "claude-opus-4-6",
+  "orchestratorModel": "claude-opus-4-8",
   "orchestratorPersona": "arbiter",
   "defaultMemberModel": "claude-sonnet-4-6",
   "enabled": true
