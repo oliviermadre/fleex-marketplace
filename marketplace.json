@@ -184,6 +184,13 @@
     },
     {
       "kind": "persona",
+      "slug": "herald",
+      "displayName": "Herald",
+      "path": "personas/herald.json",
+      "dependencies": []
+    },
+    {
+      "kind": "persona",
       "slug": "jarvis",
       "displayName": "Jarvis",
       "path": "personas/jarvis.json",
@@ -288,6 +295,30 @@
     },
     {
       "kind": "skill",
+      "slug": "release-entry",
+      "displayName": "Release - Entry",
+      "path": "skills/release-entry.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "herald"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "slug": "release-notes",
+      "displayName": "Release - Notes",
+      "path": "skills/release-notes.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "herald"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
       "slug": "review-spec",
       "displayName": "Product - Review Spec",
       "path": "skills/review-spec.json",
@@ -319,6 +350,22 @@
         {
           "kind": "persona",
           "slug": "jarvis"
+        }
+      ]
+    },
+    {
+      "kind": "workflow",
+      "slug": "release-notes",
+      "displayName": "Release Notes",
+      "path": "workflows/release-notes.json",
+      "dependencies": [
+        {
+          "kind": "persona",
+          "slug": "herald"
+        },
+        {
+          "kind": "skill",
+          "slug": "release-notes"
         }
       ]
     },
