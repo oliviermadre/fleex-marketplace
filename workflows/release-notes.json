@@ -1,0 +1,86 @@
+{
+  "slug": "release-notes",
+  "name": "Release Notes",
+  "emoji": "📣",
+  "description": "Collecte les fragments, rédige la release #N, la fait valider, puis la publie (PR + Slack)",
+  "steps": [
+    {
+      "id": "s-release-notes-draft",
+      "name": "Collect & draft",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "executorRef": "release-notes",
+      "executorType": "skill"
+    },
+    {
+      "id": "s-release-notes-gate",
+      "name": "Valider la release",
+      "position": {
+        "x": 320,
+        "y": 0
+      },
+      "executorRef": "",
+      "executorType": "human_gate",
+      "humanGateOutcomes": [
+        "approve",
+        "reject"
+      ]
+    },
+    {
+      "id": "s-release-notes-publish",
+      "name": "Publish",
+      "position": {
+        "x": 640,
+        "y": 0
+      },
+      "executorRef": "release-notes",
+      "executorType": "skill"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-release-notes-draft-gate",
+      "source": "s-release-notes-draft",
+      "target": "s-release-notes-gate",
+      "isDefault": true
+    },
+    {
+      "id": "e-release-notes-gate-approve",
+      "label": "approve",
+      "source": "s-release-notes-gate",
+      "target": "s-release-notes-publish",
+      "conditionGroup": {
+        "match": "all",
+        "clauses": [
+          {
+            "field": "outcome",
+            "operator": "eq",
+            "value": "approve"
+          }
+        ]
+      },
+      "isDefault": false
+    },
+    {
+      "id": "e-release-notes-gate-reject",
+      "label": "reject",
+      "source": "s-release-notes-gate",
+      "target": "s-release-notes-draft",
+      "conditionGroup": {
+        "match": "all",
+        "clauses": [
+          {
+            "field": "outcome",
+            "operator": "eq",
+            "value": "reject"
+          }
+        ]
+      },
+      "isDefault": false
+    }
+  ],
+  "entryStepId": "s-release-notes-draft",
+  "enabled": true
+}

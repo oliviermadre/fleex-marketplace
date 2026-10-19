@@ -34,7 +34,7 @@ fleex-marketplace/
 
 Le `marketplace.json` est la **source de vérité**. Il référence chaque primitive par son `slug`, son `path` et ses `dependencies`. La CLI maintient ce manifeste cohérent : tu n'as jamais à l'éditer à la main.
 
-Contenu actuel : **3 panels**, **20 personas**, **7 skills**, **1 workflow**.
+Contenu actuel : **3 panels**, **21 personas**, **9 skills**, **2 workflows**.
 
 ---
 
